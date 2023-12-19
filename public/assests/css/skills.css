@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500;600;700&family=Ms+Madi&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  /* list-style: none; */
+  text-decoration: none;
+}
+
+/* VARIABLES */
+:root {
+  --font-family: "Work Sans", sans-serif;
+  --font-style: "Ms Madi", cursive;
+  --font-aesthetic: "Baskervville", serif;
+  --base-color: #000;
+  --standard-color: #fff;
+  --selected-color: #e1aa74;
+  --hover-color: #7c3906;
+  --header-bg-color: #f4dfc8;
+  --base-light-color: #191919;
+  --hero-bg-color: #fff8f1;
+}
+
+::selection {
+  background-color: var(--selected-color);
+}
+
+section.skills-sec {
+  width: 65.375rem;
+  height: 70vh;
+  padding: 4.5rem 0 0 22rem;
+  background-color: var(--hero-bg-color);
+}
+
+section.skills-sec > h2.skill-hob {
+  font-size: 2.5rem;
+  letter-spacing: 0.313rem;
+  font-family: var(--font-aesthetic);
+  font-weight: 500;
+}
+
+div.skill-hob-container {
+  margin-top: 3rem;
+  /* background-color: #fff; */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 95%;
+}
+
+ol.ordered-list {
+  padding-left: 2rem;
+  line-height: 2.5rem;
+}
+
+li.heading-item::marker {
+  font-family: var(--font-aesthetic);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+span.list-head {
+  font-family: var(--font-aesthetic);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+li#list-items-skills {
+  list-style: decimal-leading-zero;
+}
+
+li#list-items-hobbies {
+  list-style: decimal-leading-zero;
+}
+
+li.skills-list-item {
+  list-style: inside;
+  line-height: 1.5rem;
+}
+
+li.hobbies-list-item {
+  list-style: inside;
+  line-height: 1.5rem;
+}

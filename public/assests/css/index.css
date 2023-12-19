@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Ms+Madi&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  /* list-style: none; */
+  text-decoration: none;
+}
+
+/* VARIABLES */
+:root {
+  --font-family: "Work Sans", sans-serif;
+  --font-style: "Ms Madi", cursive;
+  --font-aesthetic: "Baskervville", serif;
+  --base-color: #000;
+  --standard-color: #fff;
+  --selected-color: #e1aa74;
+  --hover-color: #7c3906;
+  --header-bg-color: #f4dfc8;
+  --base-light-color: #191919;
+  --hero-bg-color: #fff8f1;
+}
+
+::selection {
+  background-color: var(--selected-color);
+}
+
+/* SCROLLBAR MODIFICATION */
+
+/* html::-webkit-scrollbar {
+  width: 1.5vw;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--selected-color);
+  border-radius: 1em;
+  border: 0.25rem solid var(--header-bg-color);
+  transition: all 0.3s ease-in-out;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #c69774;
+  border-radius: 1em;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: var(--header-bg-color);
+} */
+
+html {
+  font-size: 18px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* scroll-padding-top: 3.125rem; */
+  /* scroll-padding-top: 1.875rem; */
+  overflow-y: scroll;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-aesthetic);
+}
+
+div.resume {
+  display: flex;
+  max-width: 100vw;
+}
+
+/* Header & sidewbar */
+
+aside.page-header {
+  background-color: var(--header-bg-color);
+  display: inline-block;
+  position: fixed;
+  /* justify-content: center; */
+  align-items: center;
+  height: 6vh;
+  width: 12rem;
+  /* width: 12.5rem; */
+  min-height: 100vh;
+  padding-left: 5rem;
+  z-index: 1;
+}
+
+div.nav-logo {
+  display: flex;
+  align-items: center;
+  padding-top: 4.5rem;
+  padding-bottom: 1rem;
+}
+
+div.nav-logo > img.verified {
+  height: 1.25rem;
+}
+
+a.logo {
+  font-family: var(--font-style);
+  font-weight: 900;
+  font-size: 1.7rem;
+  color: var(--base-color);
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  align-self: center;
+  margin-right: 0.5rem;
+}
+
+a.logo:hover {
+  color: var(--hover-color);
+}
+
+ul.nav-list {
+  display: block;
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  line-height: 4.063rem;
+}
+
+a.nav-link {
+  text-decoration: none;
+  color: var(--base-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease-out;
+}
+
+a.nav-link:hover {
+  color: var(--hover-color);
+}
+
+li.nav-item {
+  margin: 0.5rem 0;
+}
+
+/* Default Section */
+
+section.section {
+  padding: 4.5rem 0 0 19rem;
+}
+
+/* div.resume > main.main-sec {
+  box-sizing: border-box;
+} */
+
+/* Hero Section */
+
+section.hero-sec {
+  width: 65.375rem;
+  height: 100vh;
+  background-color: var(--hero-bg-color);
+  padding: 4.5rem 0 0 20rem;
+}
+
+div.hero-container {
+  width: 100%;
+  /* display: flex;
+  justify-content: ; */
+  /* display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem; */
+  /* width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 14rem; */
+  /* justify-content: center; */
+}
+
+div.img-container {
+  /* background-color: var(--header-bg-color); */
+  /* width: 40rem; */
+  position: relative;
+}
+
+div.img-container > img {
+  /* width: 25rem; */
+  background-color: var(--header-bg-color);
+  float: inline-end;
+  margin-right: 7rem;
+  height: 30.5rem;
+}
+
+div.hero-title {
+  top: 12rem;
+  left: 22rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.hero-title h1 {
+  font-size: 5.5rem;
+  letter-spacing: 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* FOOTER */
+
+footer.footer {
+  padding-left: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

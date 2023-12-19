@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500;600;700&family=Ms+Madi&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  /* list-style: none; */
+  text-decoration: none;
+}
+
+/* VARIABLES */
+:root {
+  --font-family: "Work Sans", sans-serif;
+  --font-style: "Ms Madi", cursive;
+  --font-aesthetic: "Baskervville", serif;
+  --base-color: #000;
+  --standard-color: #fff;
+  --selected-color: #e1aa74;
+  --hover-color: #7c3906;
+  --header-bg-color: #f4dfc8;
+  --base-light-color: #191919;
+  --hero-bg-color: #fff8f1;
+}
+
+::selection {
+  background-color: var(--selected-color);
+}
+
+section.experience-sec {
+  width: 65.375rem;
+  height: 85vh;
+  padding: 4.5rem 0 0 22rem;
+  background-color: var(--base-light-color);
+  /* background-color: var(--hero-bg-color); */
+  color: var(--standard-color);
+}
+
+section.experience-sec > h2.exp {
+  font-size: 2.5rem;
+  letter-spacing: 0.313rem;
+  font-family: var(--font-aesthetic);
+  font-weight: 500;
+}
+
+section.experience-sec > div.exp-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-rows: 2fr;
+  row-gap: 1.5rem;
+}
+
+ul.exp-detail {
+  margin-top: 1rem;
+}
+
+ul.exp-detail > li.exp-par {
+  line-height: 1.5rem;
+  list-style: inside;
+}
+
+div.exp-container > div.exp-col {
+  width: 100%;
+  /* display: flex;
+  /* justify-content: space-between; */
+  /* width: 85%; */
+  /* grid-template-rows: 2fr 2fr; */
+}
+
+h5.exp-header {
+  font-size: 1.2rem;
+  font-family: var(--font-aesthetic);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+div.exp-duty > h5.exp-header {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+ul.exp-list {
+  /* padding-left: 2rem; */
+  width: 50%;
+}
+
+li.exp-list-item {
+  line-height: 1.5rem;
+  list-style: inside;
+  /* margin-bottom: 1px; */
+}
